@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HealthBot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <img src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png" alt="Bot Icon" class="bot-icon">
+            <h2>HealthBot</h2>
+        </div>
+        <div class="offline-note">
+            If you are offline, contact <strong>+1 928 228 4318</strong>
+        </div>
+
+        <--div id="chatbox" class="chatbox"></div>
+
+        <div id="typingIndicator" class="typing-indicator" style="display:none;">
+            <span></span><span></span><span></span>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your symptoms..." />
+            <button onclick="sendMessage()">➤</button>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
